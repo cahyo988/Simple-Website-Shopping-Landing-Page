@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChaStore | Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="header">
+            <div class="hero">
+                <h2 class="heading"> ChaStore</h2>
+                <p class="sub-heading">T-Shirt & Pants</p>
+            </div>
+            <div class="features feature-1">
+                <h4 class="price">IDR 250K</h4>
+                <p class="item">Hoodie</p>
+            </div>
+            <div class="features feature-2">
+                <h4 class="price"> IDR 150K </h4>
+                <p class="item"> T-SHIRT </p>
+            </div>
+
+        </header>
+        <nav class="menu">
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="brand">
+                <h1>ChaStore</h1>
+            </div>
+            <ul class="menu-list">
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <section class="services">
+            <div class="service">
+                <div class="icon">
+                    <img src="img/baju1.jpg" alt="">
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quam ipsam quibusdam nobis
+                    suscipit?
+                </p>
+
+            </div>
+            <div class="service">
+                <div class="icon">
+                    <img src="img/hoodie.jpg" alt="">
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam officia ipsa et dolorum.</p>
+
+
+            </div>
+            <div class="service">
+                <div class="icon">
+                    <img src="img/jacket.png" alt="">
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam officia ipsa et dolorum.</p>
+            </div>
+            <div class="service">
+                <div class="icon">
+                    <img src="img/pants.jpg" alt="">
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam officia ipsa et dolorum.</p>
+            </div>
+
+        </section>
+        <section class="gallery">
+            <h2>GALLERY</h2>
+            <img src="img/baju1.jpg" alt="">
+            <img src="img/baju2.jpg" alt="">
+            <img src="img/pants.jpg" alt="">
+            <img src="img/hoodie.jpg" alt="">
+            <img src="img/baju1.jpg" alt="">
+            <img src="img/baju2.jpg" alt="">
+            <img src="img/pants.jpg" alt="">
+            <img src="img/hoodie.jpg" alt="">
+        </section>
+
+
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.menu ul')
+
+        menuToggle.addEventListener('click', function () {
+            nav.classList.toggle('slide');
+        })
+    </script>
+</body>
+
+</html>
